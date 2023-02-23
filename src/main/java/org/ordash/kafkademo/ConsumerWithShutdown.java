@@ -12,9 +12,9 @@ import java.time.Duration;
 import java.util.Arrays;
 import java.util.Properties;
 
-public class KafkaConsumerWithShutdown {
+public class ConsumerWithShutdown {
 
-    private static final Logger log = LoggerFactory.getLogger(KafkaConsumerWithShutdown.class.getSimpleName());
+    private static final Logger log = LoggerFactory.getLogger(ConsumerWithShutdown.class.getSimpleName());
 
     public static void main(String[] args) {
 
@@ -92,7 +92,5 @@ public class KafkaConsumerWithShutdown {
             consumer.close();
             log.info("Consumer was gracefully closed");
         }
-
     }
-
 }
